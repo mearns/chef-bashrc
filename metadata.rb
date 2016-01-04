@@ -1,0 +1,7 @@
+name 'bashrc'
+maintainer 'The Authors'
+maintainer_email 'you@example.com'
+license 'all_rights'
+description 'Installs/Configures bashrc'
+long_description 'Installs/Configures bashrc'
+version '0.1.0'
