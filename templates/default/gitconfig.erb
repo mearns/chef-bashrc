@@ -1,0 +1,28 @@
+[push]
+    default = simple
+[user]
+    name = <%= node['bmearns']['git']['name'] %>
+    email = <%= node['bmearns']['git']['email'] %>
+[core]
+    excludesfile = ~/.gitignore-global
+    autocrlf = true
+    pager = cat
+[merge]
+[alias]
+    cfg = config
+    ci = commit
+    co = checkout
+    st = status
+    stat = status
+    tags = tag
+    addall = add -A
+    aa = add -A
+    unstage = reset HEAD --
+    last = log -1 HEAD
+    who = shortlog
+    whostat = shortlog -s
+    amend = commit --amend --no-edit
+    ammend = commit --amend --no-edit
+    br = branch
+
+

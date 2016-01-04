@@ -1,18 +1,4 @@
-
-username = node['bashrc']['username']
-userhomedir = Dir.home(username)
-
-directory userhomedir do
-	owner username
-	group username
-	mode '0755'
-	action :create
-end
-
-template "#{userhomedir}/.bashrc" do
-	source 'bashrc.erb'
-end
-
-template "#{userhomedir}/.bash_profile" do
-	source 'bash_profile.erb'
-end
+include_recipe 'bmearns::create_user'
+include_recipe 'bmearns::homedir'
+include_recipe 'bmearns::bash_config'
+include_recipe 'bmearns::git_config'
