@@ -8,5 +8,6 @@ directory userhomedir do
 	group username
 	mode '0755'
 	action :create
+	recursive true
 end
 

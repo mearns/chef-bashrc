@@ -4,7 +4,7 @@ maintainer_email 'bmearns@ieee.org'
 license 'all_rights'
 description 'Common set up for workstations I use.'
 long_description 'Common set up for workstations I use.'
-version '0.1.6'
+version '0.1.7'
 
 depends 'python', '~> 1.4.6'
 
