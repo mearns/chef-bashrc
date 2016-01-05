@@ -1,7 +1,10 @@
 name 'bmearns'
-maintainer 'The Authors'
-maintainer_email 'you@example.com'
+maintainer 'Brian Mearns'
+maintainer_email 'bmearns@ieee.org'
 license 'all_rights'
-description 'Installs/Configures bmearns'
-long_description 'Installs/Configures bmearns'
-version '0.1.0'
+description 'Common set up for workstations I use.'
+long_description 'Common set up for workstations I use.'
+version '0.1.6'
+
+depends 'python', '~> 1.4.6'
+

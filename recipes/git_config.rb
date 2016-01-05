@@ -2,7 +2,7 @@
 include_recipe 'bmearns::homedir'
 
 username = node['bmearns']['user']['name']
-userhomedir = Dir.home(username)
+userhomedir = node['bmearns']['user']['homedir']
 
 template "#{userhomedir}/.gitconfig" do
     source 'gitconfig.erb'
